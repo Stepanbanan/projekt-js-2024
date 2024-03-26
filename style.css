@@ -1,16 +1,45 @@
 .h1{
     text-align: center;
-    margin-top: 4%;
+    margin: auto;
 }
 .p{
    text-align: center;
-   margin-top: 6%;
+   margin-top: 5%;
+   margin-right: 15%;
+   margin-left: 15%;
 }
 .back{
     background-color: coral;
 }
 .p1{
     text-align: right;
-    margin-top: 30%;
+    margin-top: 1%;
     margin-right: 4%;
+}
+.h2{
+    text-align: center;
+    margin: auto;
+}
+#poga1{
+    font-size: 5rem;
+    margin-left: 30%;
+}
+#poga2{
+    font-size: 10rem;
+    margin-left: 35%;
+}
+#poga4{
+    font-size: 10rem;
+    margin-left: 35%;
+}
+
+#poga5{
+    font-size: 1rem;
+    margin-top: 5%;
+    margin-right: 3%;
+    margin-left: 90%;
+}
+#form1{
+    margin-left: 40%;
+    margin-top: 2%;
 }
