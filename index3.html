@@ -10,12 +10,30 @@
 </head>
 <body class="back">
     
-    <h1 class="h2">Player1      Player2</h1>
-    <div id="form1">
-      <input id="input" type="text" placeholder="Ievadi Player1 vardu" />
-        <input id="input" type="text" placeholder="Ievadi Player2 vardu" />
+    <h1 class="h1">Akmens Papirs Šķēres</h1>
+    <div id="nameInputs">
+        <input type="text" id="player1Name" placeholder="Ievadiet pirmā spēlētāja vārdu">
+        <input type="text" id="player2Name" placeholder="Ievadiet otrā spēlētāja vārdu">
+        <button onclick="startGame()">SĀKT SPĒLI</button>
     </div>
-  
+    <div id="gameArea" class="hidden">
+        <div id="players">
+            <div id="player1" class="player">
+                <h2 id="player1Display"></h2>
+                <button onclick="makeChoice('player1', 'Akmens')">Akmens</button>
+                <button onclick="makeChoice('player1', 'Papirs')">Papirs</button>
+                <button onclick="makeChoice('player1', 'Šķēres')">Šķēres</button>
+            </div>
+            <div id="player2" class="player">
+                <h2 id="player2Display"></h2>
+                <button onclick="makeChoice('player2', 'Akmens')">Akmens</button>
+                <button onclick="makeChoice('player2', 'Papirs')">Papirs</button>
+                <button onclick="makeChoice('player2', 'Šķēres')">Šķēres</button>
+            </div>
+        </div>
+        <div id="result"></div>
+    </div>
+
 
 
     <button id="poga5" class="btn btn-info rounded-pill px-3" type="button"><a href="index2.html">uz noteikumiem</a></button>

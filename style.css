@@ -43,3 +43,44 @@
     margin-left: 40%;
     margin-top: 2%;
 }
+.radio{
+    margin-left: 40%;
+    margin-top: 2%;
+}
+#sakt{
+    font-size: 3rem;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.player{
+    margin-left: 5%;
+    margin-top: 2%;
+    display: inline-block;
+    margin: 30px;
+}
+
+.player button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+#nameInputs{
+    margin-top: 2%;
+    margin-left: 35%;
+}
+#gameArea{
+    margin-top: 2%;
+    margin-left: 26%;
+}
