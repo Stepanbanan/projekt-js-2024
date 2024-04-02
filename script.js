@@ -17,11 +17,11 @@ function startGame() {
     document.getElementById('nameInputs').classList.add('hidden');
     document.getElementById('gameArea').classList.remove('hidden');
     document.getElementById('player1Display').textContent = player1Name;
-    document.getElementById('player2Display').textContent = player2Name;
+    document.getElementById('player2Display').textContent = player2Name;   
+    resultDisplay.textContent = `${player1Name}, izvelies!`;
 }
 
 function makeChoice(player, choice) {
-    
     const resultDisplay = document.getElementById('result');
     const playerName = player === 'player1' ? player1Name : player2Name;
     const Player2Name = player === 'player1' ? player2Name : player1Name;
@@ -32,7 +32,7 @@ function makeChoice(player, choice) {
         player2Choice = choice;
     }
 
-    resultDisplay.textContent = `${Player2Name}, izvēlies`;
+    resultDisplay.textContent = `${Player2Name}, izvēlies!`;
 
     if (player1Choice !== null && player2Choice !== null) {
         determineWinner();
@@ -53,8 +53,19 @@ function determineWinner() {
     } else {
         resultDisplay.textContent = `${player2Name} uzvareja!`;
     }
-
-    // Reset choices
     player1Choice = null;
     player2Choice = null;
 }
+
+var timeDisplay = document.getElementById("time");
+ 
+document.getElementById("test").innerHTML =
+      Intl.DateTimeFormat().resolvedOptions().timeZone;
+ 
+function refreshTime() {
+  var dateString = new Date().toLocaleString("en-US", {timeZone: test.innerHTML});
+  var formattedString = dateString.replace(", ", " - ");
+  timeDisplay.innerHTML = formattedString;
+}
+ 
+setInterval(refreshTime, 1000);
