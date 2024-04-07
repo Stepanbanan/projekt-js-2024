@@ -121,3 +121,9 @@ body {
     margin: 0 auto; 
 }
 
+.paprika-regular {
+    font-family: "Paprika", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
