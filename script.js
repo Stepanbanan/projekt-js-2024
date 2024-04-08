@@ -67,14 +67,14 @@ function determineWinner() {
 
 }
 
-var timeDisplay = document.getElementById("time");
+let timeDisplay = document.getElementById("time");
  
 document.getElementById("test").innerHTML =
       Intl.DateTimeFormat().resolvedOptions().timeZone;
  
 function refreshTime() {
-  var dateString = new Date().toLocaleString("en-US", {timeZone: test.innerHTML});
-  var formattedString = dateString.replace(", ", " - ");
+  let dateString = new Date().toLocaleString("en-US", {timeZone: test.innerHTML});
+  let formattedString = dateString.replace(", ", " - ");
   timeDisplay.innerHTML = formattedString;
 }
  
